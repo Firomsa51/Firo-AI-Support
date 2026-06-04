@@ -1,0 +1,14 @@
+{
+  "name": "Chatbot",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "status": { "type": "string", "enum": ["active","inactive","training"], "default": "inactive" },
+    "welcome_message": { "type": "string" },
+    "theme_color": { "type": "string", "default": "#3B82F6" },
+    "total_conversations": { "type": "number", "default": 0 },
+    "total_documents": { "type": "number", "default": 0 }
+  },
+  "required": ["name"]
+}
