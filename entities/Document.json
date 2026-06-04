@@ -1,0 +1,13 @@
+{
+  "name": "Document",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "chatbot_id": { "type": "string" },
+    "file_url": { "type": "string" },
+    "file_type": { "type": "string", "enum": ["pdf","txt","md","html","csv","docx"] },
+    "status": { "type": "string", "enum": ["processing","ready","error"], "default": "processing" },
+    "content_preview": { "type": "string" }
+  },
+  "required": ["title","chatbot_id"]
+}
